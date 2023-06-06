@@ -343,4 +343,86 @@ i {
 .obj {
   margin: 3rem auto 0;
 }
+
+/* ============ section 1 ============ */
+.home {
+  margin-top: 0;
+}
+
+.acc {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.image {
+  padding-top: 132%;
+}
+
+.relative {
+  position: relative;
+}
+
+/* ============ section 2 ============ */
+.analyse {
+  margin: 6rem auto 0;
+}
+
+.marquee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: transparent;
+  overflow: hidden;
+  opacity: 0.30;
+}
+
+.marquee__inner {
+  font-size: var(--trois-font-size);
+  font-family: var(--trois-title-font);
+  font-weight: var(--font-regular);
+  line-height: var(--line-height);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--span-color);
+  -webkit-text-stroke-width: 0.1px;
+  white-space: nowrap;
+  padding: 0 1rem;
+  letter-spacing: 0.015em;
+  -webkit-animation: move-rtl 28000ms linear infinite;
+          animation: move-rtl 28000ms linear infinite;
+}
+
+@-webkit-keyframes move-rtl {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes move-rtl {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+#slidy-container {
+  width: 95%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: -30px;
+  border-radius: 9px;
+}
 /*# sourceMappingURL=app.css.map */
