@@ -1,5 +1,38 @@
-$c-bg: #efefef;
-$c-alt: #e41612;
-$c-text: #444;
+   /*===== COLORS =======*/
 
-$size-text: 18px;
+   $firstcolor: rgb(255, 255, 255);
+   $first-color-alt: #D7DDDD;
+   $title-color: #FFFFFF;
+   $text-color: #ffffff;
+   $text-color-light: #626F6E;
+   $body-color: #161616;
+   $span-color: #0BD4C1;
+
+
+   /*===== Font/Typography =======*/
+
+    $body-font: 'Manrope', sans-serif;
+    $title-font: 'Anton', sans-serif;
+    $second-title-font: 'Bungee Inline', cursive;
+    $trois-title-font: 'Bungee Outline', cursive;
+    $biggest-font-size: 42px;
+    $h1-font-size: 1.7rem;
+    $h2-font-size: 1.25rem;
+    $h3-font-size: 1rem;
+    $normal-font-size: .938rem;
+    $small-font-size: .813rem;
+    $smaller-font-size: .75rem; 
+    $tiny-font-size: .625rem;
+    $trois-font-size: 45px;
+
+
+    /*===== Font weight =======*/
+
+    $font-regular: 400;
+    $font-bold: 600;
+
+   /*===== z index =======*/
+
+   $z-tooltip: 1; 
+   $z-fixed: 10;
+   $z-modal: 100;

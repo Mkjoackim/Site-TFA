@@ -1,23 +1,306 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DWMA project</title>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <meta name="description" content="">
-  <!-- Meta Partage -->
-  <!-- Favicon -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="styles/app.css">
-
-  <script src="scripts/app.js" defer></script>
+  <head>
+    <!-- content type -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2, viewport-fit=cover">
+    <title>Tfa - travail de fin d'année</title>
+    <meta name="description" content="#">
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="#">
+    <meta name="twitter:title" content="Tfa - travail de fin d'année">
+    <meta name="twitter:description" content="#">
+    <meta name="twitter:image" content="#">
+    <!-- open graph -->
+    <meta property="og:locale" content="fr_BE">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tfa - travail de fin d'année">
+    <meta property="og:description" content="#">
+    <meta property="og:image" content="website">
+    <!-- rel -->
+    <link rel="stylesheet" href="style/app.css">
+    <!-- Icon -->
+    <link rel="icon" type="images/svg" href="_images/logo.png" sizes="10x10">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
 </head>
 <body>
+    <div id="top" class data-load-container>
+      <!-- header -->
+      <header class="header" id="header">
+        <nav class="nav container">
+            <!-- <a href="accueil" class="nav__logo"></a>
+            <img src="_images/logo.svg" alt="Maka joackim">
+            Comiliste -->
+            
+            <aside class="inline_menu inline_col">
+                <button class="menu_btn js-toggle-menu" data-cursor="1" aria-label="toggle menu" aria-expanded="false" id="nav-toggle">
+                    <i class="btn_line"></i>
+                    <i class="btn_line"></i>
+                </button>
+            </aside>
+            <a href="#top" class="inline_logo" data-scroll-to title="comiliste" target="_self" data-cursor="1">
+                <img class="logo_mono" src="_images/logo.png" alt="comiliste" width="114" height="111"
+                >
+                <h3 class="logo_text"> Comiliste </h3>
+            </a>
+        </nav>
+        <aside class="inline_cta inline_col">
 
-  <img src="assets/images/logo-heaj.png">
-  <h1>Hello joackim</h1>
+        </aside>
+      </header>
+      <main class="main" id="fullpage">
+          <section class="hero_banner">
+            <div class="hero_im" style="transform: scale(0, 1);"></div>
+            <div class="hero_unboring" data-para="0.15">
+              <h2>Une application pour les associations d'événementiel, facile et simple</h2> 
+            </div>
+            <figure class="hero_media">
+                <img src="_images/cercle_5-mobile@2x.jpg" alt="cercle infographie"
+                    srcset="_images/cercle_5-mobile@2x.jpg 700w,
+                    _images/cercle_5-medium@2x.jpg 1300w,
+                    _images/cercle_5-desktop@2x.jpg 2800w"
+                    sizes="(min-width: 1024px) calc(50vw - 2em), 100vw"
+                    loading="lazy"
+                    decoding="async"
+            class="home__img">
+            </figure>
+          </section>
+          <div class="hero_intro_text">
+            <p data-paragraph>
+                L'objectif est de venir en aide aux associations qui te tiennent à cœur.
+            </p>
+          </div>
+          <section class="projet">
+              <div class="asso">
+                  <h3>J'ai décidé de soutenir <span>les associations</span>  de jeunes qui organisent des événements.</h3>
+              </div>
+              <div class="objectif">
+                  <p class="obj"> Mon objectif : les aider  à s’organiser de manière plus efficace. 
+                      Ce sujet me touche car je suis moi-même bénévole dans ce type de structure.
+                      
+                  </p>
+                  <p class="obj">
+                      Pour ce faire, je vais interviewer des personnes qui sont dans les comités 
+                      de leur association respective pour en savoir plus sur les problèmes qui peuvent encourir, 
+                      qui peuvent arriver et certaines choses qui souhaite améliorer.
+                  </p>
+              </div>
+          </section>
+          <section class="analyse">
+            <div class="marquee marquee-development">
+                <div class="marquee__inner">
+                    <h2 class="inner">Réflexion, Analyse, contexte Réflexion, Analyse, contexte
+                        Réflexion,Analyse, contexte Réflexion, Analyse, contexte
+                    </h2>
+                </div>
+            </div>
+            <div class="pics" id="slidy-container">
+                <figure id="slidy">
+                    <img src="_images/antoine-mobile@2x.jpg" alt="cercle infographie"
+                    srcset="_images/antoine-mobile@2x.jpg 500w,
+                    _images/antoine_medium@2x.jpg 1000w,
+                    _images/antoine_desktop@2x.jpg 1500w"
+                    sizes="(min-width: 760px) calc(50vw - 2em), 100vw"
+                    loading="lazy"
+                    decoding="async"
+                    class="slidy__img">
+                    <img src="_images/awards_mobile@2x.jpg" alt="cercle infographie"
+                    srcset="_images/awards_mobile@2x.jpg 500w,
+                    _images/awards_medium@2x.jpg 1000w,
+                    _images/awards_desktop@2x.jpg 1500w"
+                    sizes="(min-width: 760px) calc(50vw - 2em), 100vw"
+                    loading="lazy"
+                    decoding="async"
+                    class="slidy__img">
+                    <img src="_images/joker_mobile@2x.jpg" alt="cercle infographie"
+                    srcset="_images/joker_mobile@2x.jpg 500w,
+                    _images/joker_medium@2x.jpg 1000w,
+                    _images/joker_desktop@2x.jpg 1500w"
+                    sizes="(min-width: 760px) calc(50vw - 2em), 100vw"
+                    loading="lazy"
+                    decoding="async"
+                    class="slidy__img">
+                    <img src="_images/grp_mobile@2x.jpg" alt="cercle infographie"
+                    srcset="_images/grp_mobile@2x.jpg 500w,
+                    _images/grp_medium@2x.jpg 1000w,
+                    _images/grp_desktop@2x.jpg 1500w"
+                    sizes="(min-width: 760px) calc(50vw - 2em), 100vw"
+                    loading="lazy"
+                    decoding="async"
+                    class="slidy__img">
+                </figure>
+            </div>
+          </section>
+          <section class="sub" id="sub">
+            <div class="sub__container">
+                <div class="sub__heading h1">
 
-</body>
+                </div>
+                <h3 class="sub__line">Je me base essentiellement sur <span class="span">l’organisation</span>  et la communication entre membre du comité.</h3>
+            </div>
+        </section>
+        <section class="inter">
+            <div class="hero_inter" data-para="0.15">
+                <h2>les interviews</h2> 
+            </div>
+            
+        </section>
+        <section class="rencontre">
+            <div class="grid-container">
+                <div class="column">
+                  <h2 class="ren">Les rencontres</h2>
+                  <!-- Contenu relatif aux rencontres -->
+                </div>
+                <div class="column">
+                  <p class="obj3">J'ai envoyé des messages à plusieurs associations universitaires pour organiser une entrevue et j'ai obtenu plusieurs réponses favorables. C'est ainsi que mon aventure dans la peau d'un enquêteur a commencé.</p>
+                  <p class="obj2">Au cours de ce projet, j'ai interviewé 4 responsables d'associations pour recueillir leur avis sur les problématiques rencontrées dans leur association, leur mode de fonctionnement et la mise en place d'événements. J'ai tiré de nombreuses leçons de cette expérience.</p>
+                </div>
+              </div>
+              <div class="util">
+                <p>Les utilisateurs que j'ai interviewés, tels que des étudiants en droit, économie, infographie et autres, se sont montrés ouverts à la discussion et intéressés par mon projet. Ils ont répondu avec enthousiasme à mes questions et m'ont proposé des idées supplémentaires.</p>
+              </div>
+        </section>
+        <section class="pace-content sani">
+            <div class="card5 ">
+                <img src="_images/alex.jpeg" alt="Alexandre">
+                <div class="card-body">
+                    <h3>Alexandre François</h3>
+                    <p>Président du cercle infographie de la Haute école Albert jacquard</p>
+                </div>
+            </div>
+            <div class="card5">
+                <img src="_images/laurent.jpeg" alt="laurent">
+                <div class="card-body">
+                    <h3>Laurent Galles</h3>
+                    <p>Président de conseil d'étudiants de la Haute école Albert jacquard</p>
+                
+                </div>
+            </div>
+            <div class="card5">
+                <img src="_images/lea.jpeg" alt="lea">
+                <div class="card-body">
+                    <h3>Léa Moucheron</h3>
+                    <p>Présidente de conseil d'étudiants de la haute école Hénallux</p>
+                
+                </div>
+            </div>
+            <div class="card5">
+                <img src="_images/zayd.jpeg" alt="zayd">
+                <div class="card-body">
+                    <h3>Zayd</h3>
+                    <p>Président du cercle Droit de l'universite de namur</p>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="probl">
+          <div class="prb">
+                  <h4>J'ai identifié plusieurs problématiques importantes pour mon projet, je vais me concentrerai sur la plus importante.</h4>
+          </div>
+          <div class="objectif1">
+              
+                  <p class="obj1">La plupart des personnes que j'ai interrogées ont eu du mal à communiquer efficacement au sein de l'organisation, en particulier dans les grands groupes de membres actifs. Les tâches à accomplir et les personnes responsables n'étaient pas toujours clairement définies.</p>
+                  <p class="obj1">J'ai eu l'idée de développer une application qui permettrait de faciliter la communication au sein des associations en rassemblant tous les membres des comités, les responsables des associations, les fournisseurs et tous les autres participants impliqués.</p>
+              
+            </div>
+        </section>
+        <section class="inter1">
+          <div class="hero_inter1" data-para="0.15">
+             <h2>Fonctionnalité de l’app</h2> 
+          </div>
+      </section>
+      <section class="pace-content1 sani">
+          <div class="rectan">
+              <div class="card6 card7 ">
+                  <div class="container1">
+                      <img src="_images/list.jpg" alt="liste">
+                  </div>
+                  
+                  <div class="details">
+                      <h3>Tache</h3>
+                      <p>Je vais commencer par mettre en place un premier module qui permettra de lister les tâches à accomplir, en y ajoutant une description détaillée (date, heure, lieu, etc.). Les utilisateurs pourront ajouter une tâche à la liste et la valider une fois qu'elle aura été accomplie,
+                           ce qui entraînera sa suppression automatique.</p>
+                  </div>
+              </div>
+              <div class="card6 card8">
+                  <div class="container1">
+                      <img src="_images/discussion.jpg" alt="discussion" >
+                  </div>
+                  <div class="details">
+                      <h3>Discussion</h3>
+                      <p>un espace de discussion pour poser des questions et clarifier les tâches, qui se supprimera également une fois la tâche accomplie.</p>
+                  
+                  </div>
+              </div>
+              <div class="card6 card9">
+                  <div class="container1">
+                      <img src="_images/contactus.jpg" alt="contact">
+                  </div>
+                  <div class="details">
+                      <h3>Contact</h3>
+                      <p>Comme c'est toujours mieux de donner la bonne tâche à la bonne personne, Vous retrouverez les informations dont vous aurez besoin dans la partie contact.
+                      </p>
+                  
+                  </div>
+              </div>
+          </div>
+        </section>
+        <section class="subfooter" id="subfooter">
+          <div class="subfooter__container">
+              <a title="comiliste" href="joackimmaka.be">
+                  <div class="subfooter__heading h1">
+                      <span class="subfooter__line  ">
+                          <span class="subfooter__outline aos-init aos-animate" data-aos="menu-line" data-aos-duration="700" data-aos-delay="0" data-aos-once="true" data-aos-trigger="subfooter">
+                              La simplicité est la clé qui ouvre les portes de la compréhension et de l'harmonie.
+                           </span>
+                           <span class="subfooter__fill">
+                               <span class="subfooter__inner">
+                                  La simplicité est la clé qui ouvre les portes de la compréhension et de l'harmonie.
+                               </span>
+                           </span>
+                      </span>
+                  
+                  </div>
+              </a>
+          </div>
+        </section>
+        <footer class="footer cc scroll-to">
+          <div class="mini-header mini-header__footer page-padding">
+              <h3>Contact</h3>
+              <div class="mini-header__n">(7)</div>
+          </div>
+          <div class="footer__contact">
+              <a href="#" class="footer__contact-wwu tt-uppercase">
+               
+              <div class="marquee4 marquee-footer x-mobile">
+                  <div class="marquee4__inner" aria-hidden="true" style="animation-play-state: running;">
+                      <div class="hbt">Heaj</div>
+                      <div class="hbt">Travail de fin d'année</div>
+                      <div class="hbt">design web et transmédia</div>
+                      <div class="hbt">Au i du ci</div>
+                  </div>
+              </div>
+          </a>
+          <a href="#" class="footer__contact-wwu-mail heading heading-xxs">makajoackim@gmail.com</a>
+          </div>
+          <div class="footer__bottom page-padding text text-xs tt-uppercase ft-two space-xs">
+              <div class="footer_bottom-center">
+                  <a href="https://joackimmaka.be">©joackimmaka</a>
+                  <a href="https://dwt.heaj.be">DWT</a>
+              </div>
+              <div class="cta-back">
+                  <div class="cta-back-btn x-mobile">
+                      <a href="#">Back to top</a>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      </main>
+    </div>
+  </body>
 </html>
