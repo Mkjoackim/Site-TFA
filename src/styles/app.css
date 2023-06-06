@@ -381,13 +381,13 @@ i {
 }
 
 .marquee__inner {
-  font-size: var(--trois-font-size);
-  font-family: var(--trois-title-font);
-  font-weight: var(--font-regular);
-  line-height: var(--line-height);
+  font-size: 45px;
+  font-family: "Bungee Outline", cursive;
+  font-weight: 400;
+  line-height: 4rem;
   text-align: center;
   text-transform: uppercase;
-  color: var(--span-color);
+  color: #0BD4C1;
   -webkit-text-stroke-width: 0.1px;
   white-space: nowrap;
   padding: 0 1rem;
@@ -424,5 +424,148 @@ i {
   margin: 0 auto;
   margin-top: -30px;
   border-radius: 9px;
+}
+
+/* ============ section 3 ============ */
+.sub {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8rem;
+  padding: 180px 0;
+  background-color: #99D5CD;
+  color: #161616;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.sub__container {
+  width: 100%;
+  padding: 0 30px;
+}
+
+.sub__heading {
+  padding-bottom: 6px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.h1, h1 {
+  font-size: calc(20px + 9vw);
+  line-height: .8125;
+  letter-spacing: 1px;
+}
+
+.sub__line {
+  font-family: "Anton", sans-serif;
+  font-size: 1.7rem;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.span {
+  color: white;
+}
+
+.inter1 {
+  background-color: #5196A5;
+  padding: 180px 0;
+}
+
+.inter {
+  background-color: #222222;
+  padding: 160px 0;
+}
+
+.inter .hero_views {
+  width: 100%;
+  height: 16rem;
+  margin: 0 auto 0;
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.hero_inter h2 {
+  position: relative;
+  top: 0rem;
+  width: 100%;
+  font-family: "Bungee Outline", cursive;
+  font-weight: 400;
+  font-size: 42px;
+  color: #0BD4C1;
+  text-align: center;
+  line-height: 4rem;
+  left: 0;
+  z-index: 7;
+}
+
+.hero_inter1 h2 {
+  position: relative;
+  top: 0rem;
+  width: 100%;
+  font-family: "Bungee Outline", cursive;
+  font-weight: 400;
+  font-size: 42px;
+  color: #0BD4C1;
+  text-align: center;
+  line-height: 4rem;
+  left: 0;
+  z-index: 7;
+}
+
+.hero_inter1:hover {
+  font-family: "Bungee Inline", cursive;
+}
+
+.home_inter {
+  width: 100%;
+}
+
+/* ============ section 4 ============ */
+.rencontre {
+  width: 80%;
+  margin: 5rem auto 0;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.2fr 1fr;
+      grid-template-columns: 0.2fr 1fr;
+  grid-gap: 20px;
+}
+
+.column {
+  width: 100%;
+}
+
+.column p {
+  font-size: 0.938rem;
+  line-height: 1.8rem;
+}
+
+.ren {
+  font-family: "Anton", sans-serif;
+  font-size: 1.25rem;
+  height: 1.8rem;
+  letter-spacing: 0.015rem;
+  color: #0BD4C1;
+}
+
+.obj2 {
+  margin: 3rem auto 0;
+}
+
+.util p {
+  margin: 3rem auto 0;
 }
 /*# sourceMappingURL=app.css.map */
