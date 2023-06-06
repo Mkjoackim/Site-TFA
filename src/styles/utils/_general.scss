@@ -184,3 +184,90 @@ i {
     font-style: italic;
 }
 /* ============ home ============ */
+.hero_banner {
+    width: 90%;
+    margin:1.40rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+
+    .hero_media {
+        width: 90%;
+        height: 40rem;
+        margin: 0 auto 0;
+        position: relative;
+        overflow: hidden;
+        border-radius: 9px;
+
+        .home__img {
+            position: absolute;
+            top: -50%;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            object-fit: cover;
+            border-radius: 2.4rem;
+            z-index: 1;
+        }
+        
+    }
+    .hero_unboring {
+        position: absolute;
+        top: 28rem;
+        font-family: $title-font;
+        font-weight: $font-regular;
+        font-size: $biggest-font-size;
+        text-align: center;
+        line-height: $line-height;
+        z-index: 7;
+    }
+}
+.hero_im{
+    position: absolute;
+    width: 90%;
+    height: 110%;
+    background-color: $first-color;
+    z-index: 5;
+    transform-origin: right;
+    transform: scaleX(1);
+}
+
+.hero_unboring h2 {
+    font-size: $biggest-font-size;
+}
+.hero_intro_text {
+    margin: 8rem auto 0;
+    width: 21rem;
+    height: 12.5rem;
+    font-family: $body-font;
+    font-weight: $font-regular;
+    font-size: $h2-font-size;
+    text-align: center;
+    line-height: 2.5rem;
+    overflow: hidden;
+}
+.asso {
+    margin: 1.40rem auto 0;
+    width: 85%;
+    text-align: center;
+    height: 14.4rem;
+    font-family: $title-font;
+    font-weight: $font-regular;
+    font-size: $h2-font-size;
+    line-height: 3.4rem;
+    overflow: hidden;
+}
+.objectif {
+    margin: 0rem auto 0;
+    width: 60%;
+    height: 30rem;
+    font-family: $body-font;
+    font-weight: $font-regular;
+    font-size: $normal-font-size;
+    line-height: $line-height-text;
+    overflow: hidden;
+}
+.obj {
+    margin: 3rem auto 0;
+} 
