@@ -750,7 +750,7 @@ i {
   z-index: 1;
 }
 
-.card6:hover .card6:before {
+.card6:hover:before {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
@@ -771,7 +771,7 @@ i {
   z-index: 1;
 }
 
-.card6:hover .card6:after {
+.card6:hover:after {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }

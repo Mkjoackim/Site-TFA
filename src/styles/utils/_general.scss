@@ -584,9 +584,11 @@ i {
         transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
         z-index: 1;
     }
-    &:hover &:before {
+    
+    &:hover:before {
         transform: translateX(-100%);
     }
+    
     &:after {
         content: "";
         position: absolute;
@@ -598,7 +600,7 @@ i {
         transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
         z-index: 1;
     }
-    &:hover &:after {
+    &:hover:after {
         transform: translateX(100%);
     }
 
