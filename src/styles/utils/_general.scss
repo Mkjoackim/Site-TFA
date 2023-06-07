@@ -530,3 +530,195 @@ i {
 .obj1 {
     margin: 3rem auto 0;
 }
+/* ============ section 6 ============ */
+.these {
+    margin: 10rem auto 0;
+    width: 85%;
+    height: 14.4rem;
+    font-family: $title-font;
+    font-weight: $font-regular;
+    font-size: $h3-font-size;
+    line-height: 35px;
+    overflow: hidden;
+}
+/* ============ section 7 ============ */
+.pace-content1 {
+    display: grid;
+    place-items: center center;
+    margin-top: 5rem;
+    
+}
+.rectan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    padding: 20px;
+    grid-gap: 15px;
+    
+}
+
+.card6 {
+    border-radius: 20px;
+     box-shadow: 0 0 30px rgba(0,0,0,0.18); 
+    flex-flow: row wrap;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.68);
+    transform-origin: center top; 
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+    transform: translateZ(0);
+    transition: 0.3s;
+    &:hover  {
+        box-shadow: 0 8px 16px 3px rgba(0,0,0,0.18);
+        transform: translateY(-3px) scale(1.05) rotateX(15deg);
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.18));
+        transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+        z-index: 1;
+    }
+    &:hover &:before {
+        transform: translateX(-100%);
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.18));
+        transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+        z-index: 1;
+    }
+    &:hover &:after {
+        transform: translateX(100%);
+    }
+
+}
+.card7{
+    background-color: #DAB27C;
+}
+
+.card8{
+    background-color: #5196A5;
+}
+.card9{
+    background-color: #F15B29;
+}
+.container1 {
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+.container1 img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.details{
+    padding: 20px 10px;
+    >h3{
+        color:$first-color;
+        font-weight: 400;
+        font-family:$title-font;
+        font-size:$h2-font-size;
+        margin: 10px 0 15px 0;
+        letter-spacing: 1.5px;
+    }
+    >p{
+        color: $first-color;
+        font-size:$normal-font-size;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+}
+/* ============ texte ============ */
+.subfooter {
+    position: relative;
+    display: flex;
+    margin-top: 8rem;
+    padding: 90px 0;
+    background-color: #b6c0bf;
+    color: $body-color;
+    align-items: center;
+    text-align: center;
+    animation: bgColour 7s ease-in-out infinite; 
+}
+ @keyframes bgColour{
+    0%{background: #5196A5;}
+    35%{background: #FFDB08;}
+    70%{background:#DAB27C;}
+    100%{background:#0BD4C1;}
+} 
+
+.subfooter__container {
+    width: 100%;
+    padding: 0 30px;
+}
+.h1, h1 {
+    font-size: $h1-font-size;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.subfooter__inner {
+    transform: translate(100%);
+}
+
+.subfooter__heading:hover .subfooter__fill,.subfooter__heading:hover .subfooter__inner, .subfooter__heading .subfooter__fill, .subfooter__heading.subfooter__inner {
+    transform: translate(0)
+}
+
+
+.sub__heading {
+    padding-bottom: 6px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+.h1 {
+    margin: 0;
+    font-family: $trois-title-font;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.subfooter__line {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 3;
+}
+.subfooter__outline {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $body-color;
+}
+.subfooter__fill {
+    width: 100%;
+    transform: translate(-100%);
+
+    .subfooter__inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        font-family: $second-title-font;
+        color: $body-color;
+        transition: all .3s;
+        overflow: hidden;
+    }
+}
+.subfooter__line.aos-animate .subfooter__outline span:after {
+    right: 0;
+    width: 100%;
+    transition-duration: .3s;
+    transition-delay: .8s;
+    transition-property: all;
+}
