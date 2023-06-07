@@ -919,7 +919,7 @@ div {
 }
 /* ============ MEDIA ============ */
 
-@media screen and (min-width: 576px) {
+@media only screen and (min-width: 576px) {
 
     .pace-content {
         grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
@@ -938,7 +938,7 @@ div {
         padding: 200px 0;
     }
 }
-@media screen and (min-width: 767px) {
+@media only screen and (min-width: 767px) {
     
     .asso {
         width: 80%;
@@ -969,7 +969,7 @@ div {
         padding-bottom: 9px;
     }
 }
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     
      .hero_inter1 {
         font-size: 6rem;
@@ -1035,16 +1035,47 @@ div {
         padding-bottom: 15px;
     }
  }
- @media screen and (min-width: 1289px) {
+ @media only screen and (min-width: 1280px) {
     .hero_banner .hero_unboring {
         top: 32rem;
         width: 80%;
         align-items: center;
     }
  }
- @media screen and (min-width: 1398px) {
-    .hero_inter1 {
-        top: 0rem;
-     }
+ @media only screen and (max-width: 1920px) {
+
+    .hero_unboring h2 {
+        font-size: $bg-biggest-font-size;
+        line-height: $bg-line-height;
+    }
+    .hero_intro_text {
+        font-size: $bg-normal-font-size;
+    }
+    .asso h3{
+        font-size: $bg-h1-font-size;
+    }
+    .obj {
+        font-size: $bg-normal-font-size;
+    }
+    .sub__line {
+        font-size: $bg-h1-font-size;
+    }
+    .column p{
+        font-size: $bg-normal-font-size;
+    }
+    .util p{
+        font-size: $bg-normal-font-size;
+    }
+    .prb {
+        text-align: center;
+        font-size: $bg-h2-font-size;
+        height: 10rem;
+    }
+    .objectif1 p{
+        font-size: $bg-normal-font-size;
+    }
+    .subfooter__line {
+        font-size: $bg-biggest-font-size;
+    }
  }
 

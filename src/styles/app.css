@@ -3,6 +3,7 @@
 /*===== Font/Typography =======*/
 /*===== Font weight =======*/
 /*===== z index =======*/
+/*===== big sreen =======*/
 /*===== BASE =======*/
 * {
   -webkit-box-sizing: border-box;
@@ -1205,7 +1206,7 @@ div {
 }
 
 /* ============ MEDIA ============ */
-@media screen and (min-width: 576px) {
+@media only screen and (min-width: 576px) {
   .pace-content {
     -ms-grid-columns: (minmax(400px, 400px))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
@@ -1226,7 +1227,7 @@ div {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media only screen and (min-width: 767px) {
   .asso {
     width: 80%;
     height: 7rem;
@@ -1257,7 +1258,7 @@ div {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .hero_inter1 {
     font-size: 6rem;
     line-height: 6rem;
@@ -1325,7 +1326,7 @@ div {
   }
 }
 
-@media screen and (min-width: 1289px) {
+@media only screen and (min-width: 1280px) {
   .hero_banner .hero_unboring {
     top: 32rem;
     width: 80%;
@@ -1335,9 +1336,39 @@ div {
   }
 }
 
-@media screen and (min-width: 1398px) {
-  .hero_inter1 {
-    top: 0rem;
+@media only screen and (max-width: 1920px) {
+  .hero_unboring h2 {
+    font-size: 62px;
+    line-height: 6rem;
+  }
+  .hero_intro_text {
+    font-size: 1.3rem;
+  }
+  .asso h3 {
+    font-size: 2.2rem;
+  }
+  .obj {
+    font-size: 1.3rem;
+  }
+  .sub__line {
+    font-size: 2.2rem;
+  }
+  .column p {
+    font-size: 1.3rem;
+  }
+  .util p {
+    font-size: 1.3rem;
+  }
+  .prb {
+    text-align: center;
+    font-size: 1.85rem;
+    height: 10rem;
+  }
+  .objectif1 p {
+    font-size: 1.3rem;
+  }
+  .subfooter__line {
+    font-size: 62px;
   }
 }
 /*# sourceMappingURL=app.css.map */
