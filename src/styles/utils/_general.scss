@@ -722,3 +722,198 @@ i {
     transition-delay: .8s;
     transition-property: all;
 }
+/* ============ Video ============ */
+.hero1 {
+    
+    position: relative;
+    overflow: hidden
+}
+ .hero__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 13vw;
+    border-radius: 16px;
+    margin-bottom: 13vw;
+} 
+
+.hero__video {
+    width: 70%;
+    z-index: 2;
+    cursor: pointer;
+    position: relative
+}
+.hero__video-viemo {
+    pointer-events: none
+}
+
+/* ============ FOOTER ============ */
+
+
+.footer {
+    min-height: 100vh;
+    display: flex;
+    background-color: #000000;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: relative;
+}
+.mini-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: $title-font;
+    font-weight: 500;
+    font-size: 11px;
+    font-size: clamp(11px, 0.73vw, 12px);
+    letter-spacing: .13em
+}
+
+
+.page-padding {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5rem 9.5vw;
+}
+.footer__contact {
+    text-align: center;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-top: 0;
+}
+.tt-uppercase {
+    text-transform: uppercase;
+}
+.footer__contact-wwu {
+    -webkit-transition: color ease-out .4s;
+    transition: color ease-out .4s;
+    overflow: hidden;
+    color: $first-color;
+    font-size: 9.3vw;
+}
+
+.footer__contact-wwu-inner {
+    white-space: nowrap;
+    display: flex;
+    -webkit-transform: translateX(-56%);
+    transform: translateX(-56%)
+}
+
+.footer__contact-wwu-inner>div:not(:last-child) {
+    padding-right: 1em;
+}
+div {
+    display: block;
+}
+.marquee-footer {
+    color: #2c2c2c;
+    transition: color ease-out .4s;
+}
+
+.marquee-footer:hover {
+    color: $first-color;
+}
+.marquee4 {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    font-size: 15vw;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+}
+.marquee4__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    margin-left: 2rem;
+    font-size: $trois-font-size;
+    font-family: $second-title-font;
+    font-weight: $font-regular;
+    line-height: $line-height;
+    transform: translate3d(var(--move-initial),0,0);
+    animation: marquee4 20s linear infinite;
+    white-space: nowrap;
+}
+@keyframes marquee4 {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.hbt {
+    margin-left: 4rem;
+}
+.marquee__inner div {
+    padding: 0 4vw;
+}
+.heading-xxs {
+    font-size: 2.051vw;
+}
+.footer__contact-wwu-mail {
+    align-self: center;
+}
+.footer_bottom-center {
+    text-align: center;
+}
+.footer .cta-back {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    transition: all ease-out .2s;
+}
+.cta-back a{
+    color: $first-color-alt;
+}
+.footer a{
+    color: $first-color-alt;
+}
+.footer_bottom-center a{
+    color: #2c2c2c;
+    font-size: 24px;
+    padding-left: 1rem;
+}
+.footer_bottom-center a:hover{
+    color: $first-color-alt;
+}
+/* ============ SCROLL BAR ============ */
+
+::-webkit-scrollbar{
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsl(0, 0%, 18%);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: hsl(0, 0%, 7%);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(0, 0%, 68%);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: calc(20px + 2.5vw);
+    padding-right: calc(20px + 2.5vw);
+}
+.row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(calc(9.5px + 0.125vw)*-1)!important;
+    margin-right: calc(calc(9.5px + 0.125vw)*-1)!important;
+}
