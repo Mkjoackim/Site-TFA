@@ -568,4 +568,75 @@ i {
 .util p {
   margin: 3rem auto 0;
 }
+
+/* ============ section 4 ============ */
+.pace-content {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 300px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 50px;
+}
+
+.card5 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 9px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+}
+
+.card5 img:hover {
+  -webkit-transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+          transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+}
+
+.card5:hover .card-body {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.card5 .card-body {
+  position: relative;
+  z-index: 3;
+  color: var(--text-color);
+  opacity: 0;
+  padding-top: 1rem;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.card5 .card-body p {
+  font-size: 16px;
+}
+
+.card5 h3 {
+  color: var(--span-color);
+}
 /*# sourceMappingURL=app.css.map */

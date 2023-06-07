@@ -449,3 +449,57 @@ i {
 .util p {
     margin: 3rem auto 0;
 }
+/* ============ section 4 ============ */
+
+.pace-content {
+    position: relative;
+    justify-content: center;
+    padding-top: 8rem ;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+    column-gap: 10px;
+    row-gap: 50px;
+}
+.card5 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 9px;
+    object-fit: cover;
+    object-position: center;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+
+    &:hover {
+        transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+    }
+}
+
+.card5 {
+    &:hover .card-body{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    .card-body{
+    position: relative;
+    z-index: 3;
+    color: var(--text-color);
+    opacity: 0;
+    padding-top: 1rem;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    p {
+        font-size: 16px;
+        }
+     
+    }
+    h3{
+        color: var(--span-color);
+    }
+}
+
