@@ -660,7 +660,6 @@ i {
 .objectif1 {
   margin: 0rem auto 0;
   width: 80%;
-  height: 40rem;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 0.938rem;
@@ -670,6 +669,7 @@ i {
 
 .obj1 {
   margin: 3rem auto 0;
+  margin-bottom: 3rem;
 }
 
 /* ============ section 6 ============ */
