@@ -623,7 +623,7 @@ i {
 .card5 .card-body {
   position: relative;
   z-index: 3;
-  color: var(--text-color);
+  color: #ffffff;
   opacity: 0;
   padding-top: 1rem;
   -webkit-transform: translateY(30px);
@@ -637,6 +637,37 @@ i {
 }
 
 .card5 h3 {
-  color: var(--span-color);
+  color: #0BD4C1;
+}
+
+/* ============ section 5 ============ */
+.probl {
+  width: 80%;
+  margin: 5rem auto 0;
+  position: relative;
+}
+
+.prb {
+  height: 10.4rem;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  overflow: hidden;
+}
+
+.objectif1 {
+  margin: 0rem auto 0;
+  width: 80%;
+  height: 30rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 1.8rem;
+  overflow: hidden;
+}
+
+.obj1 {
+  margin: 3rem auto 0;
 }
 /*# sourceMappingURL=app.css.map */

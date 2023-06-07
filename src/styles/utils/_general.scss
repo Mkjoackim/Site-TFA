@@ -488,7 +488,7 @@ i {
     .card-body{
     position: relative;
     z-index: 3;
-    color: var(--text-color);
+    color: $text-color;
     opacity: 0;
     padding-top: 1rem;
     transform: translateY(30px);
@@ -499,7 +499,34 @@ i {
      
     }
     h3{
-        color: var(--span-color);
+        color: $span-color;
     }
 }
-
+/* ============ section 5 ============ */
+.probl {
+    width: 80%;
+    margin: 5rem auto 0;
+    position: relative;
+}
+  .prb {
+    height: 10.4rem;
+    font-family: $title-font;
+    font-weight: $font-regular;
+    font-size: $h2-font-size;
+    line-height: 2rem;
+    overflow: hidden;
+  }
+  
+.objectif1 {
+    margin: 0rem auto 0;
+    width: 80%;
+    height: 30rem;
+    font-family: $body-font;
+    font-weight: $font-regular;
+    font-size: $normal-font-size;
+    line-height: $line-height-text;
+    overflow: hidden;
+}
+.obj1 {
+    margin: 3rem auto 0;
+}
