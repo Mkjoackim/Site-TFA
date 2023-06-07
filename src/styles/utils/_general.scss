@@ -917,3 +917,134 @@ div {
     margin-left: calc(calc(9.5px + 0.125vw)*-1)!important;
     margin-right: calc(calc(9.5px + 0.125vw)*-1)!important;
 }
+/* ============ MEDIA ============ */
+
+@media screen and (min-width: 576px) {
+
+    .pace-content {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    }
+    .card5 img{
+        width: 400px;
+        height: 400px;
+    }
+    .prb{
+        height: 10rem;
+    }
+    .rectan {
+        grid-template-columns: repeat(auto-fit, minmax(235px,1fr));
+    }
+    .subfooter {
+        padding: 200px 0;
+    }
+}
+@media screen and (min-width: 767px) {
+    
+    .asso {
+        width: 80%;
+        height: 7rem;
+        margin: 6.5rem auto 0;
+    }
+    .hero_intro_text {
+        width: 45rem;
+        margin: 4rem auto 0;
+        height: 5.5rem;
+    }
+    .c_text {
+        padding-top: 15%;
+    }
+    .objectif {
+        height: 20rem;
+    }
+    .analyse {
+        margin: 2rem auto 0;
+    }
+    .subfooter__container {
+        padding: 0 100px;
+    }
+    .sub__container {
+        padding: 0 200px;
+    }
+    .sub__heading {
+        padding-bottom: 9px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    
+     .hero_inter1 {
+        font-size: 6rem;
+        line-height: 6rem;
+        top: 0rem;
+     }
+     .pace-content {
+        grid-template-columns: repeat(auto-fill, minmax(500px, 500px));
+    }
+    .card5 img{
+        width: 500px;
+        height: 500px;
+    }
+    .grid-container1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+      } 
+    .prb {
+        line-height: 4rem;
+        font-size: $h1-font-size;
+        height: 18rem;
+    }
+    .c_text {
+        line-height:3.2rem;
+    }
+    .these h2 {
+        line-height: 3.5rem;
+    }
+    .hero_banner {
+        width: 100%;
+    }
+    .rectan {
+        padding: 10rem;
+    }
+
+    .subfooter {
+        padding: 270px 0;
+    }
+    .sub {
+        padding: 270px 0;
+    }
+    #slidy-container {
+        width: 75%;
+    }
+    .details>p {
+        line-height: 2rem;
+    }
+    .column {
+        width: 80%;
+    }
+    .rencontre{
+        width: 70%;
+    }
+    .grid-container{
+        grid-gap: 40px;
+    }
+    .util {
+        margin-left: 9rem;
+        margin-right: 6rem;
+    }
+    .sub__heading {
+        padding-bottom: 15px;
+    }
+ }
+ @media screen and (min-width: 1289px) {
+    .hero_banner .hero_unboring {
+        top: 32rem;
+        width: 80%;
+        align-items: center;
+    }
+ }
+ @media screen and (min-width: 1398px) {
+    .hero_inter1 {
+        top: 0rem;
+     }
+ }
+
