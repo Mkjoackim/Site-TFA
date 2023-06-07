@@ -625,7 +625,7 @@ i {
     border-radius: 20px 20px 0 0;
 }
 .details{
-    padding: 20px 10px;
+    padding: 20px 25px;
     >h3{
         color:$first-color;
         font-weight: 400;
@@ -1036,15 +1036,21 @@ div {
     .sub__heading {
         padding-bottom: 15px;
     }
+    .grid-prb {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
  }
- @media only screen and (min-width: 1280px) {
+ @media only screen and (min-width: 1200px) {
     .hero_banner .hero_unboring {
         top: 32rem;
         width: 80%;
         align-items: center;
     }
  }
- @media only screen and (max-width: 1920px) {
+ @media only screen and (min-width: 1280px) {
 
     .hero_unboring h2 {
         font-size: $bg-biggest-font-size;

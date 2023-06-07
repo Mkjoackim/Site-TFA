@@ -801,7 +801,7 @@ i {
 }
 
 .details {
-  padding: 20px 10px;
+  padding: 20px 25px;
 }
 
 .details > h3 {
@@ -1324,9 +1324,17 @@ div {
   .sub__heading {
     padding-bottom: 15px;
   }
+  .grid-prb {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1200px) {
   .hero_banner .hero_unboring {
     top: 32rem;
     width: 80%;
@@ -1336,7 +1344,7 @@ div {
   }
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1280px) {
   .hero_unboring h2 {
     font-size: 62px;
     line-height: 6rem;
