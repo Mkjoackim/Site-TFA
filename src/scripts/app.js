@@ -49,8 +49,6 @@ if( animation === false ) {
 document.body.appendChild(css);
 }
 
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".hero0", {
