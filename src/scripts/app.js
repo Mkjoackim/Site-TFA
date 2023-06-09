@@ -67,29 +67,16 @@ gsap.to(".hero0", {
 
 
 
-/* const sr = ScrollReveal({
+const sr = ScrollReveal({
   origin: 'top',
-  distance: '60px',
+  distance: '40px',
   duration: 2200,
   delay: 400,
 })
 
 sr.reveal(`.hero_unboring`)
- sr.reveal(`.hero_intro_text, .objectif, .obj, .pics, .ren, .card5, .subfooter__line`, {origin: 'bottom'})
+sr.reveal(`.hero_intro_text, .objectif, .obj, .pics, .ren, .card5, .subfooter__line`, {origin: 'bottom'})
 sr.reveal(`.asso, .hero_inter`, {origin: 'top'})
 sr.reveal(`sub__line, .exp__data, .exp__avis, .aside__grid, .hero_inter1`, {origin: 'left'})
-sr.reveal(`.obj3, .obj2`, {origin: 'right'}) */
+sr.reveal(`.obj3, .obj2`, {origin: 'right'}) 
  
-
-
-/* gsap.to(".image", {
-    scrollTrigger:{
-        trigger: ".image",
-        start: "top bottom", 
-        end: "bottom top", 
-        scrub: 1,
-        markers: true
-    },
-    x: -250, 
-
-})*/
