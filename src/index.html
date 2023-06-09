@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE >
 <html>
 <head>
   <head>
@@ -27,7 +27,6 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-</head>
 <body>
     <div id="top" class data-load-container>
       <!-- header -->
@@ -35,11 +34,11 @@
         <nav class="nav " role="navigation">
           <div class="overlay-navigation">
             <ul>
-                <li><a href="#" data-content="Accueil">Home</a></li>
-                <li><a href="#" data-content="l'analyse">Analyse</a></li>
-                <li><a href="#" data-content="partie amusant">les interviews</a></li>
-                <li><a href="#" data-content="solution">l'app</a></li>
-                <li><a href="#" data-content="pour savoir plus">Contact</a></li>
+                <li><a href="#home" data-content="Accueil">Home</a></li>
+                <li><a href="#analyse" data-content="l'analyse">Analyse</a></li>
+                <li><a href="#interviews" data-content="partie amusant">les interviews</a></li>
+                <li><a href="#app" data-content="solution">l'app</a></li>
+                <li><a href="#footer" data-content="pour savoir plus">Contact</a></li>
               </ul>
           </div>
           <div class="open-overlay">
@@ -74,7 +73,7 @@
             class="home__img">
             </figure>
           </section>
-          <div class="hero_intro_text">
+          <div class="hero_intro_text" id="home">
             <p data-paragraph>
                 L'objectif est de venir en aide aux associations qui te tiennent à cœur.
             </p>
@@ -95,7 +94,7 @@
                   </p>
               </div>
           </section>
-          <section class="analyse">
+          <section class="analyse" id="analyse">
             <div class="marquee marquee-development">
                 <div class="marquee__inner">
                     <h2 class="inner">Réflexion, Analyse, contexte Réflexion, Analyse, contexte
@@ -148,7 +147,7 @@
                 <h3 class="sub__line">Je me base essentiellement sur <span class="span">l’organisation</span>  et la communication entre membre du comité.</h3>
             </div>
         </section>
-        <section class="inter">
+        <section class="inter" id="interviews">
             <div class="hero_inter">
                 <h2 class="hero0">les interviews</h2> 
             </div>
@@ -215,7 +214,7 @@
               </div>
           </div>
         </section>
-        <section class="inter1">
+        <section class="inter1" id="app">
           <div class="hero_inter1" data-para="0.15">
              <h2>Fonctionnalité de l’app</h2> 
           </div>
@@ -280,14 +279,14 @@
               <div class="hero__video ch"> 
                   <div class="her__video-viemo" id="hero-showreel-video" data-vimeo-initialized="true">
                       <div style="padding: 0 0 0 0;position:relative;">
-                        <iframe width="100%" height="515" src="https://www.youtube.com/embed/-3q0jgnMhro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        <iframe width="100%" height="515" src="https://www.youtube.com/embed/-3q0jgnMhro" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                         </iframe>
                       </div>
                   </div>
               </div>
           </div>
       </section>
-        <footer class="footer cc scroll-to">
+        <footer class="footer cc scroll-to" id="footer">
           <div class="mini-header mini-header__footer page-padding">
               <h3>Contact</h3>
               <div class="mini-header__n">(7)</div>
@@ -310,12 +309,37 @@
               <div class="footer_bottom-center">
                   <a href="https://joackimmaka.be">©joackimmaka</a>
                   <a href="https://dwt.heaj.be">DWT</a>
+                  <a href="#popup1">Crédit</a>
               </div>
               <div class="cta-back">
                   <div class="cta-back-btn x-mobile">
                       <a href="#">Back to top</a>
                   </div>
               </div>
+          </div>
+          <div id="popup1" class="overlay">
+            <div class="popup2">              
+              <a class="close" href="#footer">&times;</a>
+              <div class="content1">
+                <h2>Crédit</h2>
+              </div> 
+              <div class="content2">
+                <p>Ce projet a été réalisé par <span>joackim Maka</span> pour le travail de fin d'anné pour la <span>
+                  Haute école Albert jacquard
+                </span> dans l'option Design Web et Transmédia</p>
+                <p>Voici les ressources utilisées pour mener à bien ce projet.</p>
+              </div>
+              <div class="content3">
+                <div>
+                  <h2>Photos</h2>
+                  <a href="#">Cercle inforgraphie</a>
+                </div>
+                <div>
+                  <h2>Vidéo</h2>
+                  <a href="#">Youtube</a>
+                </div>
+              </div>
+            </div>
           </div>
       </footer>
       </main>

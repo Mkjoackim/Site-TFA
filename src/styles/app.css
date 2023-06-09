@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Inline&family=Bungee+Outline&family=Manrope&display=swap");
 /*===== COLORS =======*/
 /*===== Font/Typography =======*/
@@ -350,7 +351,7 @@ Navigation
   top: 0;
   left: 0;
   width: 100%;
-  height: 1080px;
+  height: 980px;
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -1032,7 +1033,7 @@ nav li:nth-of-type(5) {
   z-index: 7;
 }
 
-.hero_inter1:hover {
+.hero_inter1 h2:hover {
   font-family: "Bungee Inline", cursive;
 }
 
@@ -1714,6 +1715,100 @@ div {
   margin-right: calc(calc(9.5px + 0.125vw)*-1) !important;
 }
 
+/* ============ popup/crédit  ============ */
+.overlay {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.13);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup2 {
+  background-color: #161616;
+  padding: 1.5em 2em;
+  width: 100%;
+  max-width: 90%;
+  border-radius: 4px;
+  position: relative;
+}
+
+.popup2 .close {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.popup2 .content1 {
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 72px;
+  padding: 20px 24px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 15;
+  -webkit-transition: background-color 0.6s cubic-bezier(0.15, 0.85, 0.45, 1) 0s;
+  transition: background-color 0.6s cubic-bezier(0.15, 0.85, 0.45, 1) 0s;
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+  background-color: transparent;
+  border-bottom: 2px solid #0BD4C1;
+}
+
+.popup2 .content1 h2 {
+  font-family: "Bungee Inline", cursive;
+}
+
+.content2 p {
+  padding-top: 2rem;
+}
+
+.content3 {
+  padding-top: 3rem;
+}
+
+.content3 div {
+  padding-top: 3rem;
+  cursor: pointer;
+}
+
+.content3 div a:hover {
+  color: #0BD4C1;
+}
+
+/* ====================================
+    UIT KIT
+  ==================================== */
 /* ============ MEDIA ============ */
 @media only screen and (min-width: 576px) {
   .pace-content {
@@ -1885,6 +1980,21 @@ div {
     font-size: 1.3rem;
   }
   .subfooter__line {
+    font-size: 62px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .objectif {
+    width: 50%;
+  }
+  .column {
+    width: 70%;
+  }
+  .sub__line {
+    font-size: 62px;
+  }
+  .hero_inter1 h2 {
     font-size: 62px;
   }
 }
